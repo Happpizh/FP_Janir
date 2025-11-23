@@ -12,7 +12,7 @@ File scratch iku isine kayak config simulasi lah, kamu salin masukin ke director
 1. Copas semua file file yang udah tak suruh di atas iku
 2. Tarus jalanin kode
    ```
-   ns3 build"
+   ns3 build
    ```
 3. Terus jalanin test1 (kalao mau tau aja si)
    ```
