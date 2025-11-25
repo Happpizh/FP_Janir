@@ -1,16 +1,21 @@
-## model
-Direktori "model" itu file yang dari src/aodv/model tak otak-atik, kamu salain terus tempel ke direktori src/aodv/model di aodv, keterangan
-   1. Yang ku otak-atik file aodv-packet.h, aodv-packet.cc, aodv-routing-protocol.h, dan aodv-routing-protocol.cc
-   2. File backup itu bawaan file asli aodv bawaan dari sana, buat jaga-jaga aja kemarin
-   3. file aodvd-biasa sama odvd_modif gak kepake yang kepake folder model sama scratch
+## FP_Janir
+Direktori "Janir" ada direkori lagi isinya AODVPAPER dan AODVDQE itu isinya file-file yang dari src/aodv/model tak otak-atik, bisa di copas file-file salah satu direktori (AODVPAPER atau AODVDQE) ke direktori src/aodv/model di ns3. keterangan :
+1. Direktori AODVPAPER itu implementasi dari paper
+2. Direktori AODVDQE itu implemnetasi dari proposal 
+3. Yang ku otak-atik dari AODVPAPER adalah file aodv-packet.h, aodv-packet.cc, aodv-routing-protocol.h, dan aodv-routing-protocol.cc
+4. Sedangkan untuk AODVDQE yang ku otak atik file aodv-packet.h, aodv-packet.cc, aodv-routing-protocol.h, aodv-routing-protocol.cc, aodv-rtable.h dan aodv-rtable.cc
+5. Direktori scratch isinya file file confog buat simulasi. 
 
 ## scratch
 File scratch iku isine kayak config simulasi lah, kamu salin masukin ke directory scratch ada test1 sama test2
 1. test1 buat cek posisi tadi intinya ngecek header e lah
 2. test2 ngecek aodv-d nya
 
+## catatan tambahan
+File aodvd-biasa odvd_modif sama direktori model gak kepake, tapi direktori model ada file backup buat jaga-jaga
+
 ## cara jalanin
-1. Copas semua file file yang udah tak suruh di atas iku
+1. Copas semua file file yang udah tak suruh di atas itu, bisa pake AODVPAPER atau AODVDQE tergantung mau testing apa
 2. Tarus jalanin kode
    ```
    ns3 build
@@ -26,8 +31,4 @@ File scratch iku isine kayak config simulasi lah, kamu salin masukin ke director
    atau
    ```
    ./ns3 run "scratch/test2 --nodes=50 --speed=20"
-   ```
-6. Kalau mau tau log threshold Rreq drop dll
-   ```
-   NS_LOG="AodvRoutingProtocol" ./ns3 run "scratch/test2 --nodes=10 --speed=20" 2>&1 | grep "AODV-D CHECK"
    ```
