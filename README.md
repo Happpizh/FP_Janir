@@ -23,7 +23,11 @@ File scratch iku isine kayak config simulasi lah, kamu salin masukin ke director
    ```
    ./ns3 run "scratch/test2 --speed=10"
    ```
-5. Kalau mau tau log threshold Rreq drop dll
+   atau
+   ```
+   ./ns3 run "scratch/test2 --nodes=50 --speed=20"
+   ```
+6. Kalau mau tau log threshold Rreq drop dll
    ```
    NS_LOG="AodvRoutingProtocol" ./ns3 run "scratch/test2 --nodes=10 --speed=20" 2>&1 | grep "AODV-D CHECK"
    ```
