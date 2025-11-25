@@ -2,6 +2,7 @@
 Direktori "model" itu file yang dari src/aodv/model tak otak-atik, kamu salain terus tempel ke direktori src/aodv/model di aodv, keterangan
    1. Yang ku otak-atik file aodv-packet.h, aodv-packet.cc, aodv-routing-protocol.h, dan aodv-routing-protocol.cc
    2. File backup itu bawaan file asli aodv bawaan dari sana, buat jaga-jaga aja kemarin
+   3. file aodvd-biasa sama odvd_modif gak kepake yang kepake folder model sama scratch
 
 ## scratch
 File scratch iku isine kayak config simulasi lah, kamu salin masukin ke directory scratch ada test1 sama test2
